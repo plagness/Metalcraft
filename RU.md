@@ -1,6 +1,18 @@
+<div align="right">
+
 [🇬🇧](README.md) | 🇷🇺
 
+</div>
+
+<div align="center">
+
 # Metalcraft
+
+Воксельный движок с нуля на Swift + Metal для Apple Silicon
+
+Эксперимент — насколько далеко можно зайти на одном чипе M-серии без внешних зависимостей
+
+<br>
 
 [![Version](https://img.shields.io/badge/version-26.3.10.1-blue.svg)](https://github.com/plagness/Metalcraft/releases)
 [![Swift](https://img.shields.io/badge/Swift-5.9-F05138.svg?logo=swift&logoColor=white)](https://swift.org)
@@ -8,18 +20,18 @@
 [![macOS](https://img.shields.io/badge/macOS-14.0+-000000.svg?logo=macos&logoColor=white)](https://www.apple.com/macos/)
 [![Apple Silicon](https://img.shields.io/badge/Apple_Silicon-M1+-FF3B30.svg?logo=apple&logoColor=white)](https://support.apple.com/en-us/116943)
 [![License](https://img.shields.io/badge/license-Apache_2.0-green.svg)](LICENSE)
-[![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)]()
-[![LOC](https://img.shields.io/badge/lines_of_code-~4600-8B5CF6.svg)]()
 
-Воксельный движок с нуля на Swift + Metal для Apple Silicon. Эксперимент — насколько далеко можно зайти на одном чипе M-серии без внешних зависимостей.
+<br>
 
 ![Скриншот](Screenshots/2026-03-10.png)
 
-[![Architecture](https://img.shields.io/badge/Архитектура-Open-1f6feb?style=for-the-badge)](docs/architecture.md)
-[![Performance](https://img.shields.io/badge/Производительность-Open-1f6feb?style=for-the-badge)](docs/performance.md)
-[![Shaders](https://img.shields.io/badge/Шейдеры-Open-1f6feb?style=for-the-badge)](docs/shaders.md)
-[![Chunks](https://img.shields.io/badge/Система_чанков-Open-1f6feb?style=for-the-badge)](docs/chunk-system.md)
-[![Changelog](https://img.shields.io/badge/Changelog-Open-1f6feb?style=for-the-badge)](CHANGELOG.md)
+<br>
+
+[Архитектура](docs/architecture.md) · [Производительность](docs/performance.md) · [Шейдеры](docs/shaders.md) · [Система чанков](docs/chunk-system.md) · [Changelog](CHANGELOG.md)
+
+</div>
+
+---
 
 ## ✨ Возможности
 
@@ -60,6 +72,8 @@
 - Планируется: ML-апскейлинг, деноизинг, предсказание LOD
 - [Подробнее →](docs/neural-engine.md)
 
+---
+
 ## 🚀 Быстрый старт
 
 ```bash
@@ -88,6 +102,8 @@ open VoxelEngine.xcodeproj
 | `Скролл` | Скорость |
 | `Esc` | Захват курсора |
 
+---
+
 ## 📋 Требования
 
 | | Минимум |
@@ -105,6 +121,8 @@ open VoxelEngine.xcodeproj
 `Metal` · `MetalKit` · `simd` · `CoreGraphics` · `CoreText` · `Cocoa` · `QuartzCore` · `Foundation`
 
 Ноль внешних зависимостей. Без SPM. Без CocoaPods. Без Carthage.
+
+---
 
 ## 📁 Структура
 
@@ -135,6 +153,8 @@ Metalcraft/
 └── VoxelEngine.xcodeproj Готов к сборке
 ```
 
+---
+
 ## 🗺️ Дорожная карта
 
 - [ ] Neural Engine / CoreML (ANE-апскейлинг, деноизинг)
@@ -146,7 +166,7 @@ Metalcraft/
 - [ ] Сохранение мира
 - [ ] Объёмный туман и облака
 
-## Документация
+## 📖 Документация
 
 - [Архитектура](docs/architecture.md) — рендер-пайплайн, deferred rendering, tile memory
 - [Производительность](docs/performance.md) — метрики, бенчмарки, анализ bandwidth
@@ -154,7 +174,9 @@ Metalcraft/
 - [Система чанков](docs/chunk-system.md) — mega-buffer, ICB, greedy meshing, LOD
 - [Neural Engine](docs/neural-engine.md) — планы интеграции CoreML / ANE
 
-## Лицензия
+---
+
+## 📄 Лицензия
 
 ```
 Copyright 2026 plagness

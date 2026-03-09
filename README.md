@@ -1,6 +1,18 @@
+<div align="right">
+
 🇬🇧 | [🇷🇺](RU.md)
 
+</div>
+
+<div align="center">
+
 # Metalcraft
+
+Voxel engine built from scratch in Swift + Metal for Apple Silicon
+
+An experiment in seeing how far you can push a single M-series chip with zero external dependencies
+
+<br>
 
 [![Version](https://img.shields.io/badge/version-26.3.10.1-blue.svg)](https://github.com/plagness/Metalcraft/releases)
 [![Swift](https://img.shields.io/badge/Swift-5.9-F05138.svg?logo=swift&logoColor=white)](https://swift.org)
@@ -8,18 +20,18 @@
 [![macOS](https://img.shields.io/badge/macOS-14.0+-000000.svg?logo=macos&logoColor=white)](https://www.apple.com/macos/)
 [![Apple Silicon](https://img.shields.io/badge/Apple_Silicon-M1+-FF3B30.svg?logo=apple&logoColor=white)](https://support.apple.com/en-us/116943)
 [![License](https://img.shields.io/badge/license-Apache_2.0-green.svg)](LICENSE)
-[![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)]()
-[![LOC](https://img.shields.io/badge/lines_of_code-~4600-8B5CF6.svg)]()
 
-Voxel engine built from scratch in Swift + Metal for Apple Silicon. An experiment in seeing how far you can push a single M-series chip with zero external dependencies.
+<br>
 
 ![Screenshot](Screenshots/2026-03-10.png)
 
-[![Architecture](https://img.shields.io/badge/Architecture-Open-1f6feb?style=for-the-badge)](docs/architecture.md)
-[![Performance](https://img.shields.io/badge/Performance-Open-1f6feb?style=for-the-badge)](docs/performance.md)
-[![Shaders](https://img.shields.io/badge/Shaders-Open-1f6feb?style=for-the-badge)](docs/shaders.md)
-[![Chunks](https://img.shields.io/badge/Chunk_System-Open-1f6feb?style=for-the-badge)](docs/chunk-system.md)
-[![Changelog](https://img.shields.io/badge/Changelog-Open-1f6feb?style=for-the-badge)](CHANGELOG.md)
+<br>
+
+[Architecture](docs/architecture.md) · [Performance](docs/performance.md) · [Shaders](docs/shaders.md) · [Chunk System](docs/chunk-system.md) · [Changelog](CHANGELOG.md)
+
+</div>
+
+---
 
 ## ✨ Features
 
@@ -60,6 +72,8 @@ Voxel engine built from scratch in Swift + Metal for Apple Silicon. An experimen
 - Planned: ML upscaling, denoising, LOD prediction
 - [Full details →](docs/neural-engine.md)
 
+---
+
 ## 🚀 Quick Start
 
 ```bash
@@ -88,6 +102,8 @@ open VoxelEngine.xcodeproj
 | `Scroll` | Adjust speed |
 | `Esc` | Toggle cursor lock |
 
+---
+
 ## 📋 Requirements
 
 | | Minimum |
@@ -105,6 +121,8 @@ open VoxelEngine.xcodeproj
 `Metal` · `MetalKit` · `simd` · `CoreGraphics` · `CoreText` · `Cocoa` · `QuartzCore` · `Foundation`
 
 Zero external dependencies. No SPM. No CocoaPods. No Carthage.
+
+---
 
 ## 📁 Structure
 
@@ -135,6 +153,8 @@ Metalcraft/
 └── VoxelEngine.xcodeproj Ready to build
 ```
 
+---
+
 ## 🗺️ Roadmap
 
 - [ ] Neural Engine / CoreML (ANE upscaling, denoising)
@@ -146,7 +166,7 @@ Metalcraft/
 - [ ] World persistence
 - [ ] Volumetric fog & clouds
 
-## Documentation
+## 📖 Documentation
 
 - [Architecture](docs/architecture.md) — render pipeline, deferred rendering, tile memory
 - [Performance](docs/performance.md) — metrics, benchmarks, bandwidth analysis
@@ -154,7 +174,9 @@ Metalcraft/
 - [Chunk System](docs/chunk-system.md) — mega-buffer, ICB, greedy meshing, LOD
 - [Neural Engine](docs/neural-engine.md) — CoreML / ANE integration plans
 
-## License
+---
+
+## 📄 License
 
 ```
 Copyright 2026 plagness
