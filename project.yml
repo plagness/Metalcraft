@@ -1,0 +1,125 @@
+name: Metalcraft
+
+options:
+  minimumXcodeGenVersion: 2.38.0
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    MACOSX_DEPLOYMENT_TARGET: 15.0
+    CLANG_CXX_LANGUAGE_STANDARD: gnu++20
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+    DEVELOPMENT_TEAM: ""
+
+targets:
+  MetalcraftApp:
+    type: application
+    platform: macOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: Apps/MetalcraftApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.plag.Metalcraft
+        PRODUCT_NAME: Metalcraft
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_STYLE: Automatic
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.games
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 0.1.0
+    dependencies:
+      - target: MetalcraftUI
+      - target: WorldKit
+      - target: SimulationKit
+      - target: NeuralEngineKit
+      - target: RenderKit
+
+  MetalcraftUI:
+    type: framework
+    platform: macOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: Sources/MetalcraftUI
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.plag.Metalcraft.UI
+        PRODUCT_NAME: MetalcraftUI
+        GENERATE_INFOPLIST_FILE: YES
+        DEFINES_MODULE: YES
+    dependencies:
+      - target: WorldKit
+      - target: SimulationKit
+      - target: NeuralEngineKit
+      - target: RenderKit
+
+  WorldKit:
+    type: framework
+    platform: macOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: Sources/WorldKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.plag.Metalcraft.WorldKit
+        PRODUCT_NAME: WorldKit
+        GENERATE_INFOPLIST_FILE: YES
+        DEFINES_MODULE: YES
+
+  SimulationKit:
+    type: framework
+    platform: macOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: Sources/SimulationKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.plag.Metalcraft.SimulationKit
+        PRODUCT_NAME: SimulationKit
+        GENERATE_INFOPLIST_FILE: YES
+        DEFINES_MODULE: YES
+    dependencies:
+      - target: WorldKit
+
+  NeuralEngineKit:
+    type: framework
+    platform: macOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: Sources/NeuralEngineKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.plag.Metalcraft.NeuralEngineKit
+        PRODUCT_NAME: NeuralEngineKit
+        GENERATE_INFOPLIST_FILE: YES
+        DEFINES_MODULE: YES
+
+  RenderKit:
+    type: framework
+    platform: macOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: Sources/RenderKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.plag.Metalcraft.RenderKit
+        PRODUCT_NAME: RenderKit
+        GENERATE_INFOPLIST_FILE: YES
+        DEFINES_MODULE: YES
+        MTL_ENABLE_DEBUG_INFO: INCLUDE_SOURCE
+    dependencies:
+      - target: WorldKit
+
+  SimulationKitTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: Tests/SimulationKitTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.plag.Metalcraft.SimulationKitTests
+        PRODUCT_NAME: SimulationKitTests
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: SimulationKit

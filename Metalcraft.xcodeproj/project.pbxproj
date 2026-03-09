@@ -1,0 +1,1210 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		111B17F9B6AFFD4D27E78469 /* AppleStackEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEA6C28D7CBFA643D21886 /* AppleStackEntry.swift */; };
+		2100C9F8433E6DDC94627C77 /* NeuralWorkloadCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2753630700657D6F430AEC10 /* NeuralWorkloadCenter.swift */; };
+		2172BF8DB309DB829D418856 /* RenderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A18046463D2D65BA2EAFF91 /* RenderKit.framework */; };
+		35AF54A57A83DCB5198ECC6E /* RenderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A18046463D2D65BA2EAFF91 /* RenderKit.framework */; };
+		40AF69E363E7EBC6EAF4415C /* GridPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880E43518DB4F0C906625CB5 /* GridPoint.swift */; };
+		4A78F4FF550107FF0D39E2BC /* WorldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95E9375F9E30B32BC1D0F5F /* WorldKit.framework */; };
+		512B9567B953BAD40F4BE9A4 /* SimulationKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A54C23A6DB612099DF67282B /* SimulationKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		573C170887BA30FCD3558E08 /* WorldSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C902A1CFAA776D0545813F /* WorldSnapshot.swift */; };
+		5C18B46CBE87C555B0D21E22 /* FactorySimulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE250B62781D0AB5A034733 /* FactorySimulationTests.swift */; };
+		6385D9DA9E793B8C4327A84A /* VoxelViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D7AB5617769993185E6F49 /* VoxelViewport.swift */; };
+		707B99BE3AB1D393888AA76F /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F3D9D18F064B75E37EF88 /* Inventory.swift */; };
+		7961F5CD0652763A10815EBF /* NeuralEngineKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4847755A24A449A583F2D1 /* NeuralEngineKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F15BFD170162BF3F2BE588A /* WorldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95E9375F9E30B32BC1D0F5F /* WorldKit.framework */; };
+		80D331EBCAC0DCDACC249E21 /* RenderKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A18046463D2D65BA2EAFF91 /* RenderKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		81AE7DE1B9ACE8E73C596D8A /* NeuralEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4847755A24A449A583F2D1 /* NeuralEngineKit.framework */; };
+		8204A38E20285B4EF26EADDE /* MetalcraftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D5E8EB9A3A2D801E51F10 /* MetalcraftApp.swift */; };
+		8780B3BC2363A2EDC6804064 /* SimulationKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A54C23A6DB612099DF67282B /* SimulationKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B0A78EC45A49E87B7F76EE5 /* NeuralEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4847755A24A449A583F2D1 /* NeuralEngineKit.framework */; };
+		96BF9BB74D970B7620B57A75 /* WorldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95E9375F9E30B32BC1D0F5F /* WorldKit.framework */; };
+		980C43316DDF0F23D01BFF72 /* SimulationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54C23A6DB612099DF67282B /* SimulationKit.framework */; };
+		9A017D43339C6A1BAC7009EF /* AppleSiliconProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE3357B1BD963B0E4C64936 /* AppleSiliconProfile.swift */; };
+		9C44CCCEC9D7971D2ACB9D42 /* WorldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95E9375F9E30B32BC1D0F5F /* WorldKit.framework */; };
+		9D22B90D981884BA0C321A40 /* MetalcraftUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71AC23F6C14C3795C265EE62 /* MetalcraftUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2734FDE7033DD3C019BAD9A /* RenderMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7EC15567DF567BC29F0B4C /* RenderMath.swift */; };
+		AF97CBA3B08BE69B86020CDC /* VoxelRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5507A910D7D1BD2A16A4B /* VoxelRenderer.swift */; };
+		CD1D6AC3329B97B630932C82 /* MetalcraftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AC23F6C14C3795C265EE62 /* MetalcraftUI.framework */; };
+		D9BE97AD519DEC69DD7FBA50 /* SimulationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54C23A6DB612099DF67282B /* SimulationKit.framework */; };
+		DBFD624B5CE8AAEAC95DABBB /* GameDashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D50FB44B3E6D5080ED72C4 /* GameDashboardScreen.swift */; };
+		F34DE48EBA5AE57ABEDB2F8A /* VoxelShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA55E3324982A9A1C9C109 /* VoxelShaders.metal */; };
+		F50F14EE6F7F49597D63BB4E /* SimulationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54C23A6DB612099DF67282B /* SimulationKit.framework */; };
+		F64BC4D774543FC5F7420B92 /* FactorySnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284912E060CFACCD864E5C0B /* FactorySnapshot.swift */; };
+		F882EB30D3E8B97EB9742DA3 /* WorldKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B95E9375F9E30B32BC1D0F5F /* WorldKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31F0F49CE33FBD08C64888E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC34032BA8EDE479120A1D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 316A7B274120FDDE3D4CA944;
+			remoteInfo = RenderKit;
+		};
+		35D1D207FE6C0B23A295E860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC34032BA8EDE479120A1D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66FAAD1D079E2B5A133A2D8C;
+			remoteInfo = NeuralEngineKit;
+		};
+		37C097691813AE9A2BA056D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC34032BA8EDE479120A1D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66FAAD1D079E2B5A133A2D8C;
+			remoteInfo = NeuralEngineKit;
+		};
+		5C6A4996DBB36F3F2B24B645 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC34032BA8EDE479120A1D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43F3DA45D9351F88F07C6CC3;
+			remoteInfo = WorldKit;
+		};
+		757D3E0A97357256C15E0939 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC34032BA8EDE479120A1D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40F3E017A92585522BC5CFD9;
+			remoteInfo = SimulationKit;
+		};
+		8A62F367D857357709F9F2A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC34032BA8EDE479120A1D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40F3E017A92585522BC5CFD9;
+			remoteInfo = SimulationKit;
+		};
+		93D03B4643076DE07E66E432 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC34032BA8EDE479120A1D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43F3DA45D9351F88F07C6CC3;
+			remoteInfo = WorldKit;
+		};
+		9BA36A9B77795DADE1B26C98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC34032BA8EDE479120A1D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 316A7B274120FDDE3D4CA944;
+			remoteInfo = RenderKit;
+		};
+		BA6D21E5AF64264F465E52EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC34032BA8EDE479120A1D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21E2A17B8C6BF3CD2B7C21B4;
+			remoteInfo = MetalcraftUI;
+		};
+		D5C659D52C29293B4D48D426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC34032BA8EDE479120A1D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43F3DA45D9351F88F07C6CC3;
+			remoteInfo = WorldKit;
+		};
+		E4D04D86D6953BB51FE31A84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC34032BA8EDE479120A1D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43F3DA45D9351F88F07C6CC3;
+			remoteInfo = WorldKit;
+		};
+		FFF2E79116B179D27B1CF8BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC34032BA8EDE479120A1D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40F3E017A92585522BC5CFD9;
+			remoteInfo = SimulationKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		15EBDBE6DA65C7B46811EB10 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D22B90D981884BA0C321A40 /* MetalcraftUI.framework in Embed Frameworks */,
+				F882EB30D3E8B97EB9742DA3 /* WorldKit.framework in Embed Frameworks */,
+				8780B3BC2363A2EDC6804064 /* SimulationKit.framework in Embed Frameworks */,
+				7961F5CD0652763A10815EBF /* NeuralEngineKit.framework in Embed Frameworks */,
+				80D331EBCAC0DCDACC249E21 /* RenderKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA31E8C2085007B841AC6BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				512B9567B953BAD40F4BE9A4 /* SimulationKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09C902A1CFAA776D0545813F /* WorldSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldSnapshot.swift; sourceTree = "<group>"; };
+		2753630700657D6F430AEC10 /* NeuralWorkloadCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralWorkloadCenter.swift; sourceTree = "<group>"; };
+		284912E060CFACCD864E5C0B /* FactorySnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorySnapshot.swift; sourceTree = "<group>"; };
+		2A18046463D2D65BA2EAFF91 /* RenderKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RenderKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4847755A24A449A583F2D1 /* NeuralEngineKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NeuralEngineKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		447F3D9D18F064B75E37EF88 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		50495F7D781B655E4FA21A7E /* SimulationKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimulationKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71AC23F6C14C3795C265EE62 /* MetalcraftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MetalcraftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D7AB5617769993185E6F49 /* VoxelViewport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelViewport.swift; sourceTree = "<group>"; };
+		880E43518DB4F0C906625CB5 /* GridPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPoint.swift; sourceTree = "<group>"; };
+		88F5507A910D7D1BD2A16A4B /* VoxelRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelRenderer.swift; sourceTree = "<group>"; };
+		9BCA55E3324982A9A1C9C109 /* VoxelShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VoxelShaders.metal; sourceTree = "<group>"; };
+		A54C23A6DB612099DF67282B /* SimulationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimulationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B95E9375F9E30B32BC1D0F5F /* WorldKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WorldKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7D5E8EB9A3A2D801E51F10 /* MetalcraftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalcraftApp.swift; sourceTree = "<group>"; };
+		C7647DEE18A5DEFF25CBB95D /* MetalcraftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalcraftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D50FB44B3E6D5080ED72C4 /* GameDashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDashboardScreen.swift; sourceTree = "<group>"; };
+		CF7EC15567DF567BC29F0B4C /* RenderMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderMath.swift; sourceTree = "<group>"; };
+		DCE250B62781D0AB5A034733 /* FactorySimulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorySimulationTests.swift; sourceTree = "<group>"; };
+		E1AEA6C28D7CBFA643D21886 /* AppleStackEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStackEntry.swift; sourceTree = "<group>"; };
+		EBE3357B1BD963B0E4C64936 /* AppleSiliconProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSiliconProfile.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68457B8C20EB69362F62E2E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F15BFD170162BF3F2BE588A /* WorldKit.framework in Frameworks */,
+				F50F14EE6F7F49597D63BB4E /* SimulationKit.framework in Frameworks */,
+				81AE7DE1B9ACE8E73C596D8A /* NeuralEngineKit.framework in Frameworks */,
+				35AF54A57A83DCB5198ECC6E /* RenderKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B7E40B2615A6CF60291D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C44CCCEC9D7971D2ACB9D42 /* WorldKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D74D25D019F8C11555C06F45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A78F4FF550107FF0D39E2BC /* WorldKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1017145BD7B51B46481F7FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1D6AC3329B97B630932C82 /* MetalcraftUI.framework in Frameworks */,
+				96BF9BB74D970B7620B57A75 /* WorldKit.framework in Frameworks */,
+				D9BE97AD519DEC69DD7FBA50 /* SimulationKit.framework in Frameworks */,
+				8B0A78EC45A49E87B7F76EE5 /* NeuralEngineKit.framework in Frameworks */,
+				2172BF8DB309DB829D418856 /* RenderKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42002562286330838BE78D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				980C43316DDF0F23D01BFF72 /* SimulationKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EFB82AE374BFDFFC31C2BF8 = {
+			isa = PBXGroup;
+			children = (
+				4779F0B4F8E0EF52AE983C81 /* Apps */,
+				69AE8A2FB0F90644CB7EED97 /* Sources */,
+				D3B48787F8A06E3B9F87CCD9 /* Tests */,
+				5285675136AABE51CB34DC46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17BDEB8BF7DF85A120A1DD7E /* SimulationKit */ = {
+			isa = PBXGroup;
+			children = (
+				284912E060CFACCD864E5C0B /* FactorySnapshot.swift */,
+				447F3D9D18F064B75E37EF88 /* Inventory.swift */,
+			);
+			path = SimulationKit;
+			sourceTree = "<group>";
+		};
+		3E739EB8D5DF934F140A45B5 /* NeuralEngineKit */ = {
+			isa = PBXGroup;
+			children = (
+				EBE3357B1BD963B0E4C64936 /* AppleSiliconProfile.swift */,
+				2753630700657D6F430AEC10 /* NeuralWorkloadCenter.swift */,
+			);
+			path = NeuralEngineKit;
+			sourceTree = "<group>";
+		};
+		4779F0B4F8E0EF52AE983C81 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				9377AAE1A0547D65A83A1CDC /* MetalcraftApp */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		4AF94DE8B22262F0661AD0DE /* RenderKit */ = {
+			isa = PBXGroup;
+			children = (
+				CF7EC15567DF567BC29F0B4C /* RenderMath.swift */,
+				88F5507A910D7D1BD2A16A4B /* VoxelRenderer.swift */,
+				9BCA55E3324982A9A1C9C109 /* VoxelShaders.metal */,
+				76D7AB5617769993185E6F49 /* VoxelViewport.swift */,
+			);
+			path = RenderKit;
+			sourceTree = "<group>";
+		};
+		4DB41EFBCB278DBD01DEB762 /* MetalcraftUI */ = {
+			isa = PBXGroup;
+			children = (
+				E1AEA6C28D7CBFA643D21886 /* AppleStackEntry.swift */,
+				C8D50FB44B3E6D5080ED72C4 /* GameDashboardScreen.swift */,
+			);
+			path = MetalcraftUI;
+			sourceTree = "<group>";
+		};
+		5285675136AABE51CB34DC46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7647DEE18A5DEFF25CBB95D /* MetalcraftApp.app */,
+				71AC23F6C14C3795C265EE62 /* MetalcraftUI.framework */,
+				2C4847755A24A449A583F2D1 /* NeuralEngineKit.framework */,
+				2A18046463D2D65BA2EAFF91 /* RenderKit.framework */,
+				A54C23A6DB612099DF67282B /* SimulationKit.framework */,
+				50495F7D781B655E4FA21A7E /* SimulationKitTests.xctest */,
+				B95E9375F9E30B32BC1D0F5F /* WorldKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69AE8A2FB0F90644CB7EED97 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4DB41EFBCB278DBD01DEB762 /* MetalcraftUI */,
+				3E739EB8D5DF934F140A45B5 /* NeuralEngineKit */,
+				4AF94DE8B22262F0661AD0DE /* RenderKit */,
+				17BDEB8BF7DF85A120A1DD7E /* SimulationKit */,
+				9A3D8A7343A83164AAA1DED1 /* WorldKit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9377AAE1A0547D65A83A1CDC /* MetalcraftApp */ = {
+			isa = PBXGroup;
+			children = (
+				BB7D5E8EB9A3A2D801E51F10 /* MetalcraftApp.swift */,
+			);
+			path = MetalcraftApp;
+			sourceTree = "<group>";
+		};
+		9A3D8A7343A83164AAA1DED1 /* WorldKit */ = {
+			isa = PBXGroup;
+			children = (
+				880E43518DB4F0C906625CB5 /* GridPoint.swift */,
+				09C902A1CFAA776D0545813F /* WorldSnapshot.swift */,
+			);
+			path = WorldKit;
+			sourceTree = "<group>";
+		};
+		D37C7EB519A51547CA769F7E /* SimulationKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCE250B62781D0AB5A034733 /* FactorySimulationTests.swift */,
+			);
+			path = SimulationKitTests;
+			sourceTree = "<group>";
+		};
+		D3B48787F8A06E3B9F87CCD9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D37C7EB519A51547CA769F7E /* SimulationKitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21E2A17B8C6BF3CD2B7C21B4 /* MetalcraftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7539B3547B5BC821DA25A247 /* Build configuration list for PBXNativeTarget "MetalcraftUI" */;
+			buildPhases = (
+				A7D673AFC26AD594B6EA1D20 /* Sources */,
+				68457B8C20EB69362F62E2E8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				082734B57716A11A09CB0F3D /* PBXTargetDependency */,
+				A24E3B301C690D158A0214CF /* PBXTargetDependency */,
+				DA48F3A48A705601616FDCFC /* PBXTargetDependency */,
+				544CB0174553653955DD7981 /* PBXTargetDependency */,
+			);
+			name = MetalcraftUI;
+			packageProductDependencies = (
+			);
+			productName = MetalcraftUI;
+			productReference = 71AC23F6C14C3795C265EE62 /* MetalcraftUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		316A7B274120FDDE3D4CA944 /* RenderKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4BE17AF51A2296CF15409F7 /* Build configuration list for PBXNativeTarget "RenderKit" */;
+			buildPhases = (
+				F86C12941829FD0E3C104D6E /* Sources */,
+				D74D25D019F8C11555C06F45 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3FF53478E59870EB5960F76 /* PBXTargetDependency */,
+			);
+			name = RenderKit;
+			packageProductDependencies = (
+			);
+			productName = RenderKit;
+			productReference = 2A18046463D2D65BA2EAFF91 /* RenderKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		40F3E017A92585522BC5CFD9 /* SimulationKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18144DAFAF266957A3898E7A /* Build configuration list for PBXNativeTarget "SimulationKit" */;
+			buildPhases = (
+				A0FE1EC6B8297FDBC5E09CE1 /* Sources */,
+				D6B7E40B2615A6CF60291D24 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A70CCED985069C7E884E73EC /* PBXTargetDependency */,
+			);
+			name = SimulationKit;
+			packageProductDependencies = (
+			);
+			productName = SimulationKit;
+			productReference = A54C23A6DB612099DF67282B /* SimulationKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43F3DA45D9351F88F07C6CC3 /* WorldKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE413C1AC89013761AEBA6C /* Build configuration list for PBXNativeTarget "WorldKit" */;
+			buildPhases = (
+				C5305C67D7F83610F3ECCF5E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorldKit;
+			packageProductDependencies = (
+			);
+			productName = WorldKit;
+			productReference = B95E9375F9E30B32BC1D0F5F /* WorldKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		66FAAD1D079E2B5A133A2D8C /* NeuralEngineKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FF9E7EF87EDAB26C9BB2F71 /* Build configuration list for PBXNativeTarget "NeuralEngineKit" */;
+			buildPhases = (
+				7D0826F89E45DCC65DF72E15 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeuralEngineKit;
+			packageProductDependencies = (
+			);
+			productName = NeuralEngineKit;
+			productReference = 2C4847755A24A449A583F2D1 /* NeuralEngineKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97190D29AC57D6793CAA02A8 /* SimulationKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC3A7BD84D90F1B2B0722629 /* Build configuration list for PBXNativeTarget "SimulationKitTests" */;
+			buildPhases = (
+				B3A5BAD4AA4DA525CE0FFFFC /* Sources */,
+				F42002562286330838BE78D1 /* Frameworks */,
+				9BA31E8C2085007B841AC6BD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A55177E3E79BA70F39225A0 /* PBXTargetDependency */,
+			);
+			name = SimulationKitTests;
+			packageProductDependencies = (
+			);
+			productName = SimulationKitTests;
+			productReference = 50495F7D781B655E4FA21A7E /* SimulationKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3ED5CB3D057D5682E2CE16A /* MetalcraftApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49655D5637D0D240B18B9DF6 /* Build configuration list for PBXNativeTarget "MetalcraftApp" */;
+			buildPhases = (
+				8828CA2588842067621CA808 /* Sources */,
+				F1017145BD7B51B46481F7FC /* Frameworks */,
+				15EBDBE6DA65C7B46811EB10 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70DFBEBB0E03F9D0EEE63357 /* PBXTargetDependency */,
+				6654FED82D95421B9492F90E /* PBXTargetDependency */,
+				A9FF35C78C34C3ECB0FD6182 /* PBXTargetDependency */,
+				55CCB25AE3ADBFACB2F00DE6 /* PBXTargetDependency */,
+				92F8B0C5DDD21951E152E767 /* PBXTargetDependency */,
+			);
+			name = MetalcraftApp;
+			packageProductDependencies = (
+			);
+			productName = MetalcraftApp;
+			productReference = C7647DEE18A5DEFF25CBB95D /* MetalcraftApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC34032BA8EDE479120A1D8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					21E2A17B8C6BF3CD2B7C21B4 = {
+						DevelopmentTeam = "";
+					};
+					316A7B274120FDDE3D4CA944 = {
+						DevelopmentTeam = "";
+					};
+					40F3E017A92585522BC5CFD9 = {
+						DevelopmentTeam = "";
+					};
+					43F3DA45D9351F88F07C6CC3 = {
+						DevelopmentTeam = "";
+					};
+					66FAAD1D079E2B5A133A2D8C = {
+						DevelopmentTeam = "";
+					};
+					97190D29AC57D6793CAA02A8 = {
+						DevelopmentTeam = "";
+					};
+					D3ED5CB3D057D5682E2CE16A = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F6CE55194C193E26ECAF1B0F /* Build configuration list for PBXProject "Metalcraft" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 0EFB82AE374BFDFFC31C2BF8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5285675136AABE51CB34DC46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3ED5CB3D057D5682E2CE16A /* MetalcraftApp */,
+				21E2A17B8C6BF3CD2B7C21B4 /* MetalcraftUI */,
+				66FAAD1D079E2B5A133A2D8C /* NeuralEngineKit */,
+				316A7B274120FDDE3D4CA944 /* RenderKit */,
+				40F3E017A92585522BC5CFD9 /* SimulationKit */,
+				97190D29AC57D6793CAA02A8 /* SimulationKitTests */,
+				43F3DA45D9351F88F07C6CC3 /* WorldKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D0826F89E45DCC65DF72E15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A017D43339C6A1BAC7009EF /* AppleSiliconProfile.swift in Sources */,
+				2100C9F8433E6DDC94627C77 /* NeuralWorkloadCenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8828CA2588842067621CA808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8204A38E20285B4EF26EADDE /* MetalcraftApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FE1EC6B8297FDBC5E09CE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64BC4D774543FC5F7420B92 /* FactorySnapshot.swift in Sources */,
+				707B99BE3AB1D393888AA76F /* Inventory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7D673AFC26AD594B6EA1D20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111B17F9B6AFFD4D27E78469 /* AppleStackEntry.swift in Sources */,
+				DBFD624B5CE8AAEAC95DABBB /* GameDashboardScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3A5BAD4AA4DA525CE0FFFFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C18B46CBE87C555B0D21E22 /* FactorySimulationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5305C67D7F83610F3ECCF5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40AF69E363E7EBC6EAF4415C /* GridPoint.swift in Sources */,
+				573C170887BA30FCD3558E08 /* WorldSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86C12941829FD0E3C104D6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2734FDE7033DD3C019BAD9A /* RenderMath.swift in Sources */,
+				AF97CBA3B08BE69B86020CDC /* VoxelRenderer.swift in Sources */,
+				F34DE48EBA5AE57ABEDB2F8A /* VoxelShaders.metal in Sources */,
+				6385D9DA9E793B8C4327A84A /* VoxelViewport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		082734B57716A11A09CB0F3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43F3DA45D9351F88F07C6CC3 /* WorldKit */;
+			targetProxy = 5C6A4996DBB36F3F2B24B645 /* PBXContainerItemProxy */;
+		};
+		544CB0174553653955DD7981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 316A7B274120FDDE3D4CA944 /* RenderKit */;
+			targetProxy = 31F0F49CE33FBD08C64888E1 /* PBXContainerItemProxy */;
+		};
+		55CCB25AE3ADBFACB2F00DE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66FAAD1D079E2B5A133A2D8C /* NeuralEngineKit */;
+			targetProxy = 35D1D207FE6C0B23A295E860 /* PBXContainerItemProxy */;
+		};
+		6654FED82D95421B9492F90E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43F3DA45D9351F88F07C6CC3 /* WorldKit */;
+			targetProxy = 93D03B4643076DE07E66E432 /* PBXContainerItemProxy */;
+		};
+		70DFBEBB0E03F9D0EEE63357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21E2A17B8C6BF3CD2B7C21B4 /* MetalcraftUI */;
+			targetProxy = BA6D21E5AF64264F465E52EC /* PBXContainerItemProxy */;
+		};
+		7A55177E3E79BA70F39225A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40F3E017A92585522BC5CFD9 /* SimulationKit */;
+			targetProxy = 757D3E0A97357256C15E0939 /* PBXContainerItemProxy */;
+		};
+		92F8B0C5DDD21951E152E767 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 316A7B274120FDDE3D4CA944 /* RenderKit */;
+			targetProxy = 9BA36A9B77795DADE1B26C98 /* PBXContainerItemProxy */;
+		};
+		A24E3B301C690D158A0214CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40F3E017A92585522BC5CFD9 /* SimulationKit */;
+			targetProxy = FFF2E79116B179D27B1CF8BB /* PBXContainerItemProxy */;
+		};
+		A70CCED985069C7E884E73EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43F3DA45D9351F88F07C6CC3 /* WorldKit */;
+			targetProxy = D5C659D52C29293B4D48D426 /* PBXContainerItemProxy */;
+		};
+		A9FF35C78C34C3ECB0FD6182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40F3E017A92585522BC5CFD9 /* SimulationKit */;
+			targetProxy = 8A62F367D857357709F9F2A6 /* PBXContainerItemProxy */;
+		};
+		B3FF53478E59870EB5960F76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43F3DA45D9351F88F07C6CC3 /* WorldKit */;
+			targetProxy = E4D04D86D6953BB51FE31A84 /* PBXContainerItemProxy */;
+		};
+		DA48F3A48A705601616FDCFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66FAAD1D079E2B5A133A2D8C /* NeuralEngineKit */;
+			targetProxy = 37C097691813AE9A2BA056D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4A78E2DB7582D36B68ED3C31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft.SimulationKit;
+				PRODUCT_NAME = SimulationKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		667C0B34F8022BFB389B6A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft.RenderKit;
+				PRODUCT_NAME = RenderKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		688DB6E10DD75FF961E7C2E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft.NeuralEngineKit;
+				PRODUCT_NAME = NeuralEngineKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		7759C38D778BEBFAF3313CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft.WorldKit;
+				PRODUCT_NAME = WorldKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		8C18BD46A18D777905D2CAD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft.SimulationKitTests;
+				PRODUCT_NAME = SimulationKitTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A91C47492874870EE26C5482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft.WorldKit;
+				PRODUCT_NAME = WorldKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		A95E914D9D795FE1B59367FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft.SimulationKit;
+				PRODUCT_NAME = SimulationKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		B55F0819474166DCC3AEBF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft;
+				PRODUCT_NAME = Metalcraft;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B75838FE5BB220A5436EB9DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft.RenderKit;
+				PRODUCT_NAME = RenderKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		C3FD55A0CC37CADA0BF03F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C6568D2857E5E5C58768523D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft.UI;
+				PRODUCT_NAME = MetalcraftUI;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		DC37C9C85C630ABBE39615E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft.NeuralEngineKit;
+				PRODUCT_NAME = NeuralEngineKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		F02C23253F26958C77D7F24A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft;
+				PRODUCT_NAME = Metalcraft;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F458249A93FD881362AF2D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft.UI;
+				PRODUCT_NAME = MetalcraftUI;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		F9B2A6CE0CD556F4873CB523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		FAE841C3E196BA9F85DC4420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plag.Metalcraft.SimulationKitTests;
+				PRODUCT_NAME = SimulationKitTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18144DAFAF266957A3898E7A /* Build configuration list for PBXNativeTarget "SimulationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A78E2DB7582D36B68ED3C31 /* Debug */,
+				A95E914D9D795FE1B59367FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1FF9E7EF87EDAB26C9BB2F71 /* Build configuration list for PBXNativeTarget "NeuralEngineKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC37C9C85C630ABBE39615E6 /* Debug */,
+				688DB6E10DD75FF961E7C2E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		49655D5637D0D240B18B9DF6 /* Build configuration list for PBXNativeTarget "MetalcraftApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55F0819474166DCC3AEBF8A /* Debug */,
+				F02C23253F26958C77D7F24A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7539B3547B5BC821DA25A247 /* Build configuration list for PBXNativeTarget "MetalcraftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6568D2857E5E5C58768523D /* Debug */,
+				F458249A93FD881362AF2D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C4BE17AF51A2296CF15409F7 /* Build configuration list for PBXNativeTarget "RenderKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B75838FE5BB220A5436EB9DA /* Debug */,
+				667C0B34F8022BFB389B6A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CC3A7BD84D90F1B2B0722629 /* Build configuration list for PBXNativeTarget "SimulationKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE841C3E196BA9F85DC4420 /* Debug */,
+				8C18BD46A18D777905D2CAD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CFE413C1AC89013761AEBA6C /* Build configuration list for PBXNativeTarget "WorldKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7759C38D778BEBFAF3313CB8 /* Debug */,
+				A91C47492874870EE26C5482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F6CE55194C193E26ECAF1B0F /* Build configuration list for PBXProject "Metalcraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B2A6CE0CD556F4873CB523 /* Debug */,
+				C3FD55A0CC37CADA0BF03F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC34032BA8EDE479120A1D8B /* Project object */;
+}
