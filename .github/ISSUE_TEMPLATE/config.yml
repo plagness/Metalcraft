@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Project Vision
+    url: https://github.com/plagness/Metalcraft/blob/main/docs/GameVision.md
+    about: Read the current product direction before opening broad roadmap issues.

@@ -36,8 +36,18 @@ xcodegen generate
 xcodebuild -project Metalcraft.xcodeproj -scheme MetalcraftApp -configuration Debug build
 ```
 
+Или через скрипты:
+
+```bash
+./scripts/bootstrap.sh
+./scripts/generate_project.sh
+./scripts/build.sh
+./scripts/test.sh
+```
+
 ## Документация
 
 - [AppleNativeStack](docs/AppleNativeStack.md)
 - [Architecture](docs/Architecture.md)
 - [GameVision](docs/GameVision.md)
+- [Contributing](CONTRIBUTING.md)

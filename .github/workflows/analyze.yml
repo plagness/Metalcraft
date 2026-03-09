@@ -1,0 +1,36 @@
+name: Analyze
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: analyze-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    name: Xcode Analyze
+    runs-on: macos-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show Xcode Version
+        run: xcodebuild -version
+
+      - name: Install XcodeGen
+        run: ./scripts/bootstrap.sh
+
+      - name: Generate Project
+        run: ./scripts/generate_project.sh
+
+      - name: Analyze Project
+        run: ./scripts/analyze.sh
+        env:
+          CI: true
