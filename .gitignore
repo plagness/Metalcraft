@@ -1,0 +1,33 @@
+# === Xcode ===
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# === Swift ===
+.build/
+Package.resolved
+*.swp
+
+# === macOS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# === Metal (compiled) ===
+*.metallib
+*.air
+
+# === Temporary ===
+*.log
+/tmp/

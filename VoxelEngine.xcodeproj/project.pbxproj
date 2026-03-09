@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004AA606AC790B465BC7E565 /* Frustum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C791B94172D40D4786C5FCE /* Frustum.swift */; };
+		0409205D243132B0319D4939 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA2165884A160434926A08 /* GameViewController.swift */; };
+		04CA33627EAB7FD05BAD25B0 /* TerrainGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8F132AFDA0C8F1BAC5321 /* TerrainGenerator.swift */; };
+		094417E364FC72CFF80D9BD9 /* ParticleShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A502D1584FDB506DB52362AB /* ParticleShaders.metal */; };
+		17C11AE5A6002CE5614820FD /* FullscreenQuad.metal in Sources */ = {isa = PBXBuildFile; fileRef = D4055930E6F7B473B5ED646F /* FullscreenQuad.metal */; };
+		19D6C293C744CE01A7A197F2 /* CameraSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31DE64E9F0DCFC4997E358 /* CameraSystem.swift */; };
+		ACB1E506036B40EBAE6389FB /* MeshAllocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC165984FA84ECCAC6DE4CC /* MeshAllocator.swift */; };
+
+		1A817A3E9F772F91D76F6D27 /* ChunkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101367FEC03E5F65DECC852 /* ChunkManager.swift */; };
+		1E648F6B4EB5390396801D37 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F58CB15EC0281F66879AD1B /* main.swift */; };
+		287BEBEA6C19EBBF2B24CCD8 /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B7E88DFE5C6C8A4B81A7DA /* InputManager.swift */; };
+		292FB06FB44E6AB246A522CA /* GPUTerrainGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC524D62E43E30A8537400BA /* GPUTerrainGenerator.swift */; };
+		40C5370F5D0FACE6B49FA7DF /* GBufferFragment.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9F3588997B37C66DBEDB5915 /* GBufferFragment.metal */; };
+		6777640FDB64BFB49340CF59 /* GBufferVertex.metal in Sources */ = {isa = PBXBuildFile; fileRef = B54E5B010D90EF49C658E1FC /* GBufferVertex.metal */; };
+		700FE96DBD631D14B77411EE /* WaterMesher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC073660B9A43DC03C20720F /* WaterMesher.swift */; };
+		7BC31E41F32AA472F195572E /* WaterShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7C9901CC965CA831E884BD64 /* WaterShader.metal */; };
+		83A5D7AFA48892587AE515A6 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F232AAE17AB4D713F77E3F9 /* Renderer.swift */; };
+		889021D44B78C9F314901288 /* PostProcess.metal in Sources */ = {isa = PBXBuildFile; fileRef = CB88E9D61FD0F9A826155AFE /* PostProcess.metal */; };
+		A3AB270C49453E4F140C622D /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D42096B86B46ED0EC48AC /* MetalView.swift */; };
+		B33DB06B842BD32863D32903 /* DeferredLighting.metal in Sources */ = {isa = PBXBuildFile; fileRef = 54017643C2E150BF1B5E7446 /* DeferredLighting.metal */; };
+		B78F1A5BEAB41F5ECAB6000A /* GreedyMesher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D085BBCEA784B5FD62922 /* GreedyMesher.swift */; };
+		D87025FCFD95DD1EDCCAED0B /* BlockRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D600A34BFA64C19CCD93A /* BlockRegistry.swift */; };
+		D87B330D80DDD1BF8274F2E8 /* VoxelTerrainGen.metal in Sources */ = {isa = PBXBuildFile; fileRef = F17B8B06A4C359DB93E3071A /* VoxelTerrainGen.metal */; };
+		EE93A2E7264732A0FA534FA1 /* Noise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D89536EB81C591A79E4DA8 /* Noise.swift */; };
+		F03DBC7061A535A4C89034DD /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5667590703E24F6C89A0D6 /* Time.swift */; };
+		F61E76EBBDD346EB4C8B1B74 /* DebugOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9221B3D44FF3708AB8CDCDC /* DebugOverlay.swift */; };
+		F7FDDE1401756317CE8AA8C5 /* Chunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A563750FE3A43859239ADA6 /* Chunk.swift */; };
+		FFA3FFBF1F03A150F9D10623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F06A0E9922B82DDD2614FE0 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		183886901C6A44DEEE3EB554 /* VoxelEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoxelEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2D600A34BFA64C19CCD93A /* BlockRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRegistry.swift; sourceTree = "<group>"; };
+		2A563750FE3A43859239ADA6 /* Chunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chunk.swift; sourceTree = "<group>"; };
+		2D5667590703E24F6C89A0D6 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		4101367FEC03E5F65DECC852 /* ChunkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunkManager.swift; sourceTree = "<group>"; };
+		4C791B94172D40D4786C5FCE /* Frustum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frustum.swift; sourceTree = "<group>"; };
+		4F06A0E9922B82DDD2614FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54017643C2E150BF1B5E7446 /* DeferredLighting.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DeferredLighting.metal; sourceTree = "<group>"; };
+		5A9D085BBCEA784B5FD62922 /* GreedyMesher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedyMesher.swift; sourceTree = "<group>"; };
+		73B7E88DFE5C6C8A4B81A7DA /* InputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputManager.swift; sourceTree = "<group>"; };
+		7C9901CC965CA831E884BD64 /* WaterShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = WaterShader.metal; sourceTree = "<group>"; };
+		7F58CB15EC0281F66879AD1B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		949ED013CD91581E92790511 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		98D89536EB81C591A79E4DA8 /* Noise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noise.swift; sourceTree = "<group>"; };
+		98D8F132AFDA0C8F1BAC5321 /* TerrainGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainGenerator.swift; sourceTree = "<group>"; };
+		9F232AAE17AB4D713F77E3F9 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		9F3588997B37C66DBEDB5915 /* GBufferFragment.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GBufferFragment.metal; sourceTree = "<group>"; };
+		A502D1584FDB506DB52362AB /* ParticleShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ParticleShaders.metal; sourceTree = "<group>"; };
+		A8BA2165884A160434926A08 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		AC073660B9A43DC03C20720F /* WaterMesher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMesher.swift; sourceTree = "<group>"; };
+		B54E5B010D90EF49C658E1FC /* GBufferVertex.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GBufferVertex.metal; sourceTree = "<group>"; };
+		CB88E9D61FD0F9A826155AFE /* PostProcess.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PostProcess.metal; sourceTree = "<group>"; };
+		D4055930E6F7B473B5ED646F /* FullscreenQuad.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FullscreenQuad.metal; sourceTree = "<group>"; };
+		DC524D62E43E30A8537400BA /* GPUTerrainGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUTerrainGenerator.swift; sourceTree = "<group>"; };
+		E14D42096B86B46ED0EC48AC /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		E9221B3D44FF3708AB8CDCDC /* DebugOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugOverlay.swift; sourceTree = "<group>"; };
+		EE31DE64E9F0DCFC4997E358 /* CameraSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSystem.swift; sourceTree = "<group>"; };
+		9EC165984FA84ECCAC6DE4CC /* MeshAllocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshAllocator.swift; sourceTree = "<group>"; };
+
+		F17B8B06A4C359DB93E3071A /* VoxelTerrainGen.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VoxelTerrainGen.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0CE8A182F9A317A8026D59AC /* Transparency */ = {
+			isa = PBXGroup;
+			children = (
+				7C9901CC965CA831E884BD64 /* WaterShader.metal */,
+			);
+			path = Transparency;
+			sourceTree = "<group>";
+		};
+		2ADE5CE57A3A78FD5A683338 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D4055930E6F7B473B5ED646F /* FullscreenQuad.metal */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2F58E326312E247C82AF842B /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				979841F27A730C0B9D1FA5BA /* Common */,
+				C62404C7D2EC8BB977445CDD /* Deferred */,
+				5141E4AA136C0909E0B1DF0E /* Particles */,
+				307DE575BD9BAE9D1EA32D48 /* PostProcess */,
+				0CE8A182F9A317A8026D59AC /* Transparency */,
+				2ADE5CE57A3A78FD5A683338 /* Utility */,
+				AF0062A502310929D13AFCB8 /* Voxel */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		307DE575BD9BAE9D1EA32D48 /* PostProcess */ = {
+			isa = PBXGroup;
+			children = (
+				CB88E9D61FD0F9A826155AFE /* PostProcess.metal */,
+			);
+			path = PostProcess;
+			sourceTree = "<group>";
+		};
+		3AF2C9D7D6895FF6B5CA0BAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				183886901C6A44DEEE3EB554 /* VoxelEngine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49D5325DB1FA4432025DC188 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2D5667590703E24F6C89A0D6 /* Time.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5141E4AA136C0909E0B1DF0E /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				A502D1584FDB506DB52362AB /* ParticleShaders.metal */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		52ECE8E59179FB2E63D660C8 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				73B7E88DFE5C6C8A4B81A7DA /* InputManager.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		7A297B51AF860E437C3B908F /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				EE31DE64E9F0DCFC4997E358 /* CameraSystem.swift */,
+				9EC165984FA84ECCAC6DE4CC /* MeshAllocator.swift */,
+				9F232AAE17AB4D713F77E3F9 /* Renderer.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		979841F27A730C0B9D1FA5BA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				949ED013CD91581E92790511 /* ShaderTypes.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A66BBF987A2F496C89A859BB /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				4C791B94172D40D4786C5FCE /* Frustum.swift */,
+				98D89536EB81C591A79E4DA8 /* Noise.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		A8BC3B6E7606AB1B25946507 = {
+			isa = PBXGroup;
+			children = (
+				F04E807A9EFDF1111D5C6345 /* VoxelEngine */,
+				3AF2C9D7D6895FF6B5CA0BAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF0062A502310929D13AFCB8 /* Voxel */ = {
+			isa = PBXGroup;
+			children = (
+				F17B8B06A4C359DB93E3071A /* VoxelTerrainGen.metal */,
+			);
+			path = Voxel;
+			sourceTree = "<group>";
+		};
+		BA9AA670B7B2186EC6478BC1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4F06A0E9922B82DDD2614FE0 /* AppDelegate.swift */,
+				A8BA2165884A160434926A08 /* GameViewController.swift */,
+				7F58CB15EC0281F66879AD1B /* main.swift */,
+				E14D42096B86B46ED0EC48AC /* MetalView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C62404C7D2EC8BB977445CDD /* Deferred */ = {
+			isa = PBXGroup;
+			children = (
+				54017643C2E150BF1B5E7446 /* DeferredLighting.metal */,
+				9F3588997B37C66DBEDB5915 /* GBufferFragment.metal */,
+				B54E5B010D90EF49C658E1FC /* GBufferVertex.metal */,
+			);
+			path = Deferred;
+			sourceTree = "<group>";
+		};
+		E316EF32C962F988FAE221DF /* Compute */ = {
+			isa = PBXGroup;
+			children = (
+				DC524D62E43E30A8537400BA /* GPUTerrainGenerator.swift */,
+			);
+			path = Compute;
+			sourceTree = "<group>";
+		};
+		EF2FD32EB0F168182EAE02CC /* Voxel */ = {
+			isa = PBXGroup;
+			children = (
+				1E2D600A34BFA64C19CCD93A /* BlockRegistry.swift */,
+				2A563750FE3A43859239ADA6 /* Chunk.swift */,
+				4101367FEC03E5F65DECC852 /* ChunkManager.swift */,
+				5A9D085BBCEA784B5FD62922 /* GreedyMesher.swift */,
+				98D8F132AFDA0C8F1BAC5321 /* TerrainGenerator.swift */,
+				AC073660B9A43DC03C20720F /* WaterMesher.swift */,
+			);
+			path = Voxel;
+			sourceTree = "<group>";
+		};
+		F04E807A9EFDF1111D5C6345 /* VoxelEngine */ = {
+			isa = PBXGroup;
+			children = (
+				BA9AA670B7B2186EC6478BC1 /* App */,
+				E316EF32C962F988FAE221DF /* Compute */,
+				49D5325DB1FA4432025DC188 /* Core */,
+				FC3100EE96466C06ABA4E788 /* Debug */,
+				52ECE8E59179FB2E63D660C8 /* Input */,
+				A66BBF987A2F496C89A859BB /* Math */,
+				7A297B51AF860E437C3B908F /* Renderer */,
+				2F58E326312E247C82AF842B /* Shaders */,
+				EF2FD32EB0F168182EAE02CC /* Voxel */,
+			);
+			path = VoxelEngine;
+			sourceTree = "<group>";
+		};
+		FC3100EE96466C06ABA4E788 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				E9221B3D44FF3708AB8CDCDC /* DebugOverlay.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		"TEMP_D4ACC062-796A-48BF-BEEE-FCB40A88234B" /* ECS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ECS;
+			sourceTree = "<group>";
+		};
+		"TEMP_DE81CCEF-1DC7-4416-84DF-7DFA91363BBF" /* NeuralEngine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NeuralEngine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB9074E05A338CB961AC2DD2 /* VoxelEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7879AE5CD045ED874B7FAEC2 /* Build configuration list for PBXNativeTarget "VoxelEngine" */;
+			buildPhases = (
+				A4BF12FB953375988DB509F0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoxelEngine;
+			packageProductDependencies = (
+			);
+			productName = VoxelEngine;
+			productReference = 183886901C6A44DEEE3EB554 /* VoxelEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3310C64D61A045F59F446FDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FB9074E05A338CB961AC2DD2 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 555306CD39FB4FE3C2DDF85F /* Build configuration list for PBXProject "VoxelEngine" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A8BC3B6E7606AB1B25946507;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3AF2C9D7D6895FF6B5CA0BAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB9074E05A338CB961AC2DD2 /* VoxelEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4BF12FB953375988DB509F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA3FFBF1F03A150F9D10623 /* AppDelegate.swift in Sources */,
+				D87025FCFD95DD1EDCCAED0B /* BlockRegistry.swift in Sources */,
+				19D6C293C744CE01A7A197F2 /* CameraSystem.swift in Sources */,
+				ACB1E506036B40EBAE6389FB /* MeshAllocator.swift in Sources */,
+				F7FDDE1401756317CE8AA8C5 /* Chunk.swift in Sources */,
+				1A817A3E9F772F91D76F6D27 /* ChunkManager.swift in Sources */,
+				F61E76EBBDD346EB4C8B1B74 /* DebugOverlay.swift in Sources */,
+				B33DB06B842BD32863D32903 /* DeferredLighting.metal in Sources */,
+				004AA606AC790B465BC7E565 /* Frustum.swift in Sources */,
+				17C11AE5A6002CE5614820FD /* FullscreenQuad.metal in Sources */,
+				40C5370F5D0FACE6B49FA7DF /* GBufferFragment.metal in Sources */,
+				6777640FDB64BFB49340CF59 /* GBufferVertex.metal in Sources */,
+				292FB06FB44E6AB246A522CA /* GPUTerrainGenerator.swift in Sources */,
+				0409205D243132B0319D4939 /* GameViewController.swift in Sources */,
+				B78F1A5BEAB41F5ECAB6000A /* GreedyMesher.swift in Sources */,
+				287BEBEA6C19EBBF2B24CCD8 /* InputManager.swift in Sources */,
+				A3AB270C49453E4F140C622D /* MetalView.swift in Sources */,
+				EE93A2E7264732A0FA534FA1 /* Noise.swift in Sources */,
+				094417E364FC72CFF80D9BD9 /* ParticleShaders.metal in Sources */,
+				889021D44B78C9F314901288 /* PostProcess.metal in Sources */,
+				83A5D7AFA48892587AE515A6 /* Renderer.swift in Sources */,
+				04CA33627EAB7FD05BAD25B0 /* TerrainGenerator.swift in Sources */,
+				F03DBC7061A535A4C89034DD /* Time.swift in Sources */,
+				D87B330D80DDD1BF8274F2E8 /* VoxelTerrainGen.metal in Sources */,
+				700FE96DBD631D14B77411EE /* WaterMesher.swift in Sources */,
+				7BC31E41F32AA472F195572E /* WaterShader.metal in Sources */,
+				1E648F6B4EB5390396801D37 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1E64EE02020A14D34DB5F3CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_GENERATION_MODE = GeneratedFile;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSMainNibFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.voxelengine.demo;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6280D89B89D26953E194BF07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_GENERATION_MODE = GeneratedFile;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSMainNibFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.voxelengine.demo;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8D7B6259FF509A49943B05B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				METAL_LIBRARY_OUTPUT_DIR = "$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				MTL_LANGUAGE_REVISION = UseDeploymentTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = VoxelEngine/Shaders/Common/ShaderTypes.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		BB745136B9FB2FA70F64DAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				METAL_LIBRARY_OUTPUT_DIR = "$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				MTL_LANGUAGE_REVISION = UseDeploymentTarget;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = VoxelEngine/Shaders/Common/ShaderTypes.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		555306CD39FB4FE3C2DDF85F /* Build configuration list for PBXProject "VoxelEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB745136B9FB2FA70F64DAD2 /* Debug */,
+				8D7B6259FF509A49943B05B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7879AE5CD045ED874B7FAEC2 /* Build configuration list for PBXNativeTarget "VoxelEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6280D89B89D26953E194BF07 /* Debug */,
+				1E64EE02020A14D34DB5F3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3310C64D61A045F59F446FDC /* Project object */;
+}

@@ -1,0 +1,46 @@
+name: VoxelEngine
+options:
+  bundleIdPrefix: com.voxelengine
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "15.0"
+  minimumXcodeGenVersion: "2.37"
+  defaultConfig: Debug
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    MTL_LANGUAGE_REVISION: UseDeploymentTarget
+    METAL_LIBRARY_OUTPUT_DIR: "$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)"
+    CLANG_ENABLE_MODULES: YES
+    SWIFT_OBJC_BRIDGING_HEADER: "VoxelEngine/Shaders/Common/ShaderTypes.h"
+  configs:
+    Debug:
+      SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+      MTL_ENABLE_DEBUG_INFO: INCLUDE_SOURCE
+      GCC_PREPROCESSOR_DEFINITIONS: "DEBUG=1"
+    Release:
+      SWIFT_OPTIMIZATION_LEVEL: "-O"
+      MTL_ENABLE_DEBUG_INFO: "NO"
+
+targets:
+  VoxelEngine:
+    type: application
+    platform: macOS
+    sources:
+      - path: VoxelEngine
+        excludes:
+          - "**/*.mlpackage"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.voxelengine.demo
+        INFOPLIST_GENERATION_MODE: GeneratedFile
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSMainNibFile: ""
+        INFOPLIST_KEY_NSPrincipalClass: NSApplication
+        INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.games"
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+    dependencies: []
+    preBuildScripts: []

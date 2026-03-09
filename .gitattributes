@@ -1,0 +1,21 @@
+# === GitHub Language Statistics ===
+# Goal: show only Swift and Metal in the repo language bar
+
+# ShaderTypes.h is a Metal-Swift bridging header, not generic C
+VoxelEngine/Shaders/Common/ShaderTypes.h linguist-language=Metal
+
+# Metal Shading Language
+*.metal linguist-language=Metal
+
+# XcodeGen project definition — build config, not source
+project.yml linguist-generated
+
+# Generated Xcode project files
+*.pbxproj linguist-generated
+*.xcworkspacedata linguist-generated
+
+# Documentation
+*.md linguist-documentation
+
+# Binary assets
+*.png binary
