@@ -1,10 +1,6 @@
-<div align="right">
+<div align="center">
 
 🇬🇧 | [🇷🇺](RU.md)
-
-</div>
-
-<div align="center">
 
 # Metalcraft
 
