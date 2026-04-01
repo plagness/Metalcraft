@@ -1,0 +1,13 @@
+category: gaming
+type: personal
+status: active
+title:
+  en: "Metalcraft"
+  ru: "Metalcraft"
+description:
+  en: "Voxel engine from scratch on Apple Metal"
+  ru: "Воксельный движок с нуля на Apple Metal"
+tags: [swift, metal, voxel, gpu, apple-silicon]
+focus:
+  - gamedev
+  - performance
